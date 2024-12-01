@@ -14,9 +14,11 @@ namespace Drone
     public string? author;
     public int pages;
 
-    // this is a constrcutor method
-    public Book(string name){
-      Console.WriteLine(name);
+    // this is a constrcutor method (in python zou je vaak dan __init__ maken of __repr__)
+    public Book(string aTitle,string aAuthor,int aPages){
+      title = aTitle;
+      author = aAuthor;
+      pages = aPages;
     }
 
   }

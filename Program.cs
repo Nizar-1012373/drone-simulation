@@ -5,21 +5,18 @@ using System.Security.Cryptography;
 
 namespace Drone
 {
-    // classes and objects
+    // classes and objects with constructors
     class Hello
     {
         static void Main(string[] args)
         {   
-            Book book1 = new Book("Nizar");
-            book1.title = "drie fundamenten";
-            book1.author = "Mohamed ibn abdulwahab";
-            book1.pages = 30;
+            Book book1 = new Book("drie fundamenten","Mohamed ibn abdulwahab",30);
+            
 
-            Book book2 = new Book("Mohamed");
-            book2.title = "kitab at tawheed";
-            book2.author = "ibn Taymiya";
-            book2.pages = 192;
+            Book book2 = new Book("kitab at tawheed","ibn Taymiya",192);
+          
 
+            Console.WriteLine(book1.title);
             Console.WriteLine(book2.title);
         }
         
