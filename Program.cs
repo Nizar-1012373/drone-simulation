@@ -10,14 +10,14 @@ namespace Drone
     {
         static void Main(string[] args)
         {   
-            Book book1 = new Book("drie fundamenten","Mohamed ibn abdulwahab",30);
-            
+            Pirate pirate1 = new Pirate("Donquixote Doflamingo", "Donquixote pirates",110);
+            Pirate pirate2 = new Pirate("Red hair Shanks", "Red hair pirates",200);
+            Pirate pirate3 = new Pirate("Franky", "Straw hat pirates",50);
 
-            Book book2 = new Book("kitab at tawheed","ibn Taymiya",192);
-          
+            Console.WriteLine("the pirate "+pirate1.name+" of the "+pirate1.group+" has Conqures haki "+pirate1.HasConquerorshaki());
+            Console.WriteLine("the pirate "+pirate2.name+" of the "+pirate2.group+" has Conqures haki "+pirate2.HasConquerorshaki());
+            Console.WriteLine("the pirate "+pirate3.name+" of the "+pirate3.group+" has no Conqures haki "+pirate3.HasConquerorshaki());
 
-            Console.WriteLine(book1.title);
-            Console.WriteLine(book2.title);
         }
         
     
