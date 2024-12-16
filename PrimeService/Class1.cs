@@ -2,12 +2,13 @@
 
 namespace Prime.Services
 {
-    public class PrimeService
+    public class Motor
     {
-        public bool IsPrime(int candidate)
+        public bool IsStarting(bool starting)
         {
           
-          return candidate == 2;
+          return starting;
+          
         }
     }
 }

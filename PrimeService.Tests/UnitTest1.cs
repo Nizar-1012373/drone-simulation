@@ -3,15 +3,15 @@ using Prime.Services;
 
 namespace Prime.UnitTests.Services
 {
-    public class PrimeService_IsPrimeShould
+    public class TestMotor
     {
         [Fact]
         public void IsPrime_InputIs1_ReturnFalse()
         {
-            var primeService = new PrimeService();
-            bool result = primeService.IsPrime(1);
+            var motor = new Motor();
+            bool result = motor.IsStarting(false);
 
-            Assert.False(result, "1 should not be prime");
+            Assert.True(result, "The motor is not starting");
         }
     }
 }
