@@ -17,7 +17,7 @@ namespace Drone
     public string? wing3;
 
     public string? wing4;
-  }
+  
 
   public void propellor(string aWing1,string aWing2,string aWing3,string aWing4){
         wing1 = aWing1;
@@ -26,5 +26,5 @@ namespace Drone
         wing4 = aWing4;
       }
 
- 
+  }
 }
